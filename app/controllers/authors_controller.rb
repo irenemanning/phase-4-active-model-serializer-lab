@@ -5,11 +5,12 @@ class AuthorsController < ApplicationController
     authors = Author.all 
     render json: authors
   end
-
   def show
     author = Author.find(params[:id])
     render json: author
   end
+
+  
 
   private
 
